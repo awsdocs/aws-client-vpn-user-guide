@@ -3,7 +3,7 @@
 The following procedure shows how to establish a VPN connection using the OpenVPN client application on a Windows computer\.
 
 **Note**  
-For more information about the OpenVPN client application, see the [Installation guide for OpenVPN Connect Client on Windows](https://openvpn.net/vpn-server-resources/installation-guide-for-openvpn-connect-client-on-windows/) on the OpenVPN website\.
+For information about the OpenVPN client application, see the [Community Downloads](https://openvpn.net/community-downloads/) on the OpenVPN website\.
 
 **To establish a VPN connection**
 
