@@ -3,8 +3,57 @@
 The following are problems you might have when using MacOS\-based clients to connect to a Client VPN endpoint\.
 
 **Topics**
++ [AWS\-Provided Client](#macos-troubleshooting-client-vpn-connect)
 + [Tunnelblick](#macos-troubleshooting-tunnelblick)
 + [OpenVPN](#macos-troubleshooting-openvpn)
+
+## AWS\-Provided Client<a name="macos-troubleshooting-client-vpn-connect"></a>
+
+The AWS\-provided client creates event logs and stores them in the following location on your computer\.
+
+```
+/Users/username/.config/AWSVPNClient/logs
+```
+
+The following types of logs are available:
++ **Application logs**: Contain information about the application\. These logs are prefixed with 'aws\_vpn\_client\_'\.
++ **OpenVPN logs**: Contain information about OpenVPN processes\. These logs are prefixed with 'ovpn\_aws\_vpn\_client\_'\.
+
+The AWS\-provided client uses the client daemon to perform root operations\. The daemon logs are stored in the following locations on your computer\.
+
+```
+/tmp/AcvcHelperErrLog.txt
+/tmp/AcvcHelperOutLog.txt
+```
+
+### Client Cannot Connect<a name="macos-troubleshooting-client-vpn-cannot-connect"></a>
+
+**Problem**  
+The AWS\-provided client cannot connect to the Client VPN endpoint\.
+
+**Cause**  
+The cause of this problem might be one of the following:
++ Another OpenVPN process is already running on your computer, which prevents the client from connecting\.
++ Your configuration \(\.ovpn\) file is invalid\.
+
+**Solution**  
+Check that there are no other OpenVPN applications running on your computer\. If there are, stop or quit these processes and try connecting to the Client VPN endpoint again\. Check the OpenVPN logs for errors, and ask your Client VPN administrator to verify the following information:
++ The configuration file contains the correct client key and certificate\.
++ The CRL is still valid\. For more information, see [Clients Unable to Connect to a Client VPN Endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#client-cannot-connect) in the *AWS Client VPN Administrator Guide*\.
+
+### Client is Stuck in a Reconnecting State<a name="macos-troubleshooting-client-vpn-stuck"></a>
+
+**Problem**  
+The AWS\-provided client is trying to connect to the Client VPN endpoint, but is stuck in a reconnecting state\.
+
+**Cause**  
+The cause of this problem might be one of the following:
++ You computer is not connected to the internet\.
++ The DNS hostname does not resolve to an IP address\.
++ An OpenVPN process is indefinitely trying to connect to the endpoint\.
+
+**Solution**  
+Check that your computer is connected to the internet\. Ask your Client VPN administrator to verify that the `remote` directive in the configuration file resolves to a valid IP address\. You can also disconnect the VPN session by choosing **Disconnect** in the AWS VPN Client window, and try connecting again\.
 
 ## Tunnelblick<a name="macos-troubleshooting-tunnelblick"></a>
 

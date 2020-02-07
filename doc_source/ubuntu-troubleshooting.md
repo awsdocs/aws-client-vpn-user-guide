@@ -4,6 +4,8 @@
 + OpenVPN through Network Manager \(GUI\)
 + OpenVPN \(command line\)
 
+Ensure that you are running the latest version of these clients\. 
+
 The connection logs are stored in the following location on your computer:
 
 ```

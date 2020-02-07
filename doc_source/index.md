@@ -1,7 +1,7 @@
 # AWS Client VPN User Guide
 
 -----
-*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -15,7 +15,11 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [Getting Started with Client VPN](user-getting-started.md)
-+ [Connect to a VPN](connect.md)
++ [Connect Using the AWS-Provided Client](connect-aws-client-vpn-connect.md)
+   + [Windows](client-vpn-connect-windows.md)
+   + [macOS](client-vpn-connect-macos.md)
+   + [Release Notes for the AWS-Provided Client](release-notes.md)
++ [Connect Using an OpenVPN Client](connect.md)
    + [Windows](windows.md)
    + [Android and iOS](android.md)
    + [MacOS](macos.md)

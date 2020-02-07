@@ -3,8 +3,78 @@
 The following are problems you might have when using Windows\-based clients to connect to a Client VPN endpoint\.
 
 **Topics**
++ [AWS\-Provided Client](#windows-troubleshooting-client-vpn-connect)
 + [OpenVPN Connect Client](#windows-troubleshooting-openvpn-connect)
 + [OpenVPN GUI](#windows-troubleshooting-openvpn-gui)
+
+## AWS\-Provided Client<a name="windows-troubleshooting-client-vpn-connect"></a>
+
+The AWS\-provided client creates event logs and stores them in the following location on your computer\.
+
+```
+C:\Users\User\AppData\Roaming\AWSVPNClient\logs
+```
+
+The following types of logs are available:
++ **Application logs**: Contain information about the application\. These logs are prefixed with 'aws\_vpn\_client\_'\.
++ **OpenVPN logs**: Contain information about OpenVPN processes\. These logs are prefixed with 'ovpn\_aws\_vpn\_client\_'\.
+
+The AWS\-provided client uses the Windows service to perform root operations\. Windows service logs are stored in the following location on your computer\.
+
+```
+C:\Program Files\Amazon\AWS VPN Client\WinServiceLogs\username
+```
+
+### Client Cannot Connect<a name="windows-troubleshooting-client-vpn-cannot-connect"></a>
+
+**Problem**  
+The AWS\-provided client cannot connect to the Client VPN endpoint\.
+
+**Cause**  
+The cause of this problem might be one of the following:
++ Another OpenVPN process is already running on your computer, which prevents the client from connecting\.
++ Your configuration \(\.ovpn\) file is invalid\.
+
+**Solution**  
+Check that there are no other OpenVPN applications running on your computer\. If there are, stop or quit these processes and try connecting to the Client VPN endpoint again\. Check the OpenVPN logs for errors, and ask your Client VPN administrator to verify the following information:
++ The configuration file contains the correct client key and certificate\.
++ The CRL is still valid\. For more information, see [Clients Unable to Connect to a Client VPN Endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#client-cannot-connect) in the *AWS Client VPN Administrator Guide*\.
+
+### Client is Stuck in a Reconnecting State<a name="windows-troubleshooting-client-vpn-stuck"></a>
+
+**Problem**  
+The AWS\-provided client is trying to connect to the Client VPN endpoint, but is stuck in a reconnecting state\.
+
+**Cause**  
+The cause of this problem might be one of the following:
++ You computer is not connected to the internet\.
++ The DNS hostname does not resolve to an IP address\.
++ An OpenVPN process is indefinitely trying to connect to the endpoint\.
+
+**Solution**  
+Check that your computer is connected to the internet\. Ask your Client VPN administrator to verify that the `remote` directive in the configuration file resolves to a valid IP address\. You can also disconnect the VPN session by choosing **Disconnect** in the AWS VPN Client window, and try connecting again\.
+
+### VPN Connection Process Quits Unexpectedly<a name="windows-troubleshooting-client-vpn-quits"></a>
+
+**Problem**  
+While connecting to a Client VPN endpoint, the client quits unexpectedly\.
+
+**Cause**  
+TAP\-Windows is not installed on your computer\. This software is required to run the client\.
+
+**Solution**  
+Rerun the AWS\-provided client installer to install all the required dependencies\.
+
+### Application Fails to Launch<a name="windows-troubleshooting-client-vpn-cannot-launch"></a>
+
+**Problem**  
+On Windows 7, the AWS\-provided client does not launch when you try to open it\.
+
+**Cause**  
+\.NET Framework 4\.7\.2 or higher is not installed on your computer\. This is required to run the client\.
+
+**Solution**  
+Rerun the AWS\-provided client installer to install all the required dependencies\.
 
 ## OpenVPN Connect Client<a name="windows-troubleshooting-openvpn-connect"></a>
 
