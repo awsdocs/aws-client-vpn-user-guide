@@ -2,6 +2,8 @@
 
 The following procedures show how to establish a VPN connection using Ubuntu\-based VPN clients\.
 
+Before you begin, ensure that your Client VPN administrator has created a Client VPN endpoint and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html#cvpn-getting-started-config)\.
+
 For troubleshooting information, see [Ubuntu Troubleshooting](ubuntu-troubleshooting.md)\.
 
 ## OpenVPN \- Network Manager<a name="ubuntu-network-manager-openvpn"></a>

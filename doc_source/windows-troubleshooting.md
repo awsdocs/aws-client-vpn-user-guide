@@ -25,6 +25,13 @@ The AWS\-provided client uses the Windows service to perform root operations\. W
 C:\Program Files\Amazon\AWS VPN Client\WinServiceLogs\username
 ```
 
+**Topics**
++ [Client Cannot Connect](#windows-troubleshooting-client-vpn-cannot-connect)
++ [Client is Stuck in a Reconnecting State](#windows-troubleshooting-client-vpn-stuck)
++ [VPN Connection Process Quits Unexpectedly](#windows-troubleshooting-client-vpn-quits)
++ [Application Fails to Launch](#windows-troubleshooting-client-vpn-cannot-launch)
++ [Client Cannot Create Profile](#windows-troubleshooting-client-vpn-cannot-create-profile)
+
 ### Client Cannot Connect<a name="windows-troubleshooting-client-vpn-cannot-connect"></a>
 
 **Problem**  
@@ -37,7 +44,7 @@ The cause of this problem might be one of the following:
 
 **Solution**  
 Check that there are no other OpenVPN applications running on your computer\. If there are, stop or quit these processes and try connecting to the Client VPN endpoint again\. Check the OpenVPN logs for errors, and ask your Client VPN administrator to verify the following information:
-+ The configuration file contains the correct client key and certificate\.
++ The configuration file contains the correct client key and certificate\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
 + The CRL is still valid\. For more information, see [Clients Unable to Connect to a Client VPN Endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#client-cannot-connect) in the *AWS Client VPN Administrator Guide*\.
 
 ### Client is Stuck in a Reconnecting State<a name="windows-troubleshooting-client-vpn-stuck"></a>
@@ -75,6 +82,21 @@ On Windows 7, the AWS\-provided client does not launch when you try to open it\.
 
 **Solution**  
 Rerun the AWS\-provided client installer to install all the required dependencies\.
+
+### Client Cannot Create Profile<a name="windows-troubleshooting-client-vpn-cannot-create-profile"></a>
+
+**Problem**  
+You get the following error when you try to create a profile using the AWS\-provided client\.
+
+```
+The config should have either cert and key or auth-user-pass specified.
+```
+
+**Cause**  
+If the Client VPN endpoint uses mutual authentication, the configuration \(\.ovpn\) file does not contain the client certificate and key\.
+
+**Solution**  
+Ensure that your Client VPN administrator adds the client certificate and key to the configuration file\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
 
 ## OpenVPN Connect Client<a name="windows-troubleshooting-openvpn-connect"></a>
 

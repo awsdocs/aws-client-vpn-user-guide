@@ -26,6 +26,11 @@ The AWS\-provided client uses the client daemon to perform root operations\. The
 /tmp/AcvcHelperOutLog.txt
 ```
 
+**Topics**
++ [Client Cannot Connect](#macos-troubleshooting-client-vpn-cannot-connect)
++ [Client is Stuck in a Reconnecting State](#macos-troubleshooting-client-vpn-stuck)
++ [Client Cannot Create Profile](#macos-troubleshooting-client-vpn-cannot-create-profile)
+
 ### Client Cannot Connect<a name="macos-troubleshooting-client-vpn-cannot-connect"></a>
 
 **Problem**  
@@ -38,7 +43,7 @@ The cause of this problem might be one of the following:
 
 **Solution**  
 Check that there are no other OpenVPN applications running on your computer\. If there are, stop or quit these processes and try connecting to the Client VPN endpoint again\. Check the OpenVPN logs for errors, and ask your Client VPN administrator to verify the following information:
-+ The configuration file contains the correct client key and certificate\.
++ The configuration file contains the correct client key and certificate\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
 + The CRL is still valid\. For more information, see [Clients Unable to Connect to a Client VPN Endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#client-cannot-connect) in the *AWS Client VPN Administrator Guide*\.
 
 ### Client is Stuck in a Reconnecting State<a name="macos-troubleshooting-client-vpn-stuck"></a>
@@ -54,6 +59,21 @@ The cause of this problem might be one of the following:
 
 **Solution**  
 Check that your computer is connected to the internet\. Ask your Client VPN administrator to verify that the `remote` directive in the configuration file resolves to a valid IP address\. You can also disconnect the VPN session by choosing **Disconnect** in the AWS VPN Client window, and try connecting again\.
+
+### Client Cannot Create Profile<a name="macos-troubleshooting-client-vpn-cannot-create-profile"></a>
+
+**Problem**  
+You get the following error when you try to create a profile using the AWS\-provided client\.
+
+```
+The config should have either cert and key or auth-user-pass specified.
+```
+
+**Cause**  
+If the Client VPN endpoint uses mutual authentication, the configuration \(\.ovpn\) file does not contain the client certificate and key\.
+
+**Solution**  
+Ensure that your Client VPN administrator adds the client certificate and key to the configuration file\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
 
 ## Tunnelblick<a name="macos-troubleshooting-tunnelblick"></a>
 

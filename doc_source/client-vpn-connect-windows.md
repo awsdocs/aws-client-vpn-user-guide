@@ -12,6 +12,8 @@ To use the AWS\-provided client for Windows, the following are required:
 
 The client reserves TCP port 8096 on your computer\.
 
+Before you begin, ensure that your Client VPN administrator has created a Client VPN endpoint and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html#cvpn-getting-started-config)\.
+
 ## Connecting<a name="client-vpn-connect-windows-connecting"></a>
 
 Before you begin, ensure that you've read the [requirements](#client-vpn-connect-windows-req)\. The AWS\-provided client is also referred to as *AWS VPN Client* in the following steps\.

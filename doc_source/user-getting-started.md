@@ -2,6 +2,8 @@
 
 Before you can establish a VPN session, your Client VPN administrator must create and configure a Client VPN endpoint\. Your administrator controls which networks and resources you can access when you establish a VPN session\. You then use a VPN client application to connect to a Client VPN endpoint and establish a secure VPN connection\.
 
+For more information about creating a Client VPN endpoint, see the [AWS Client VPN Administrator Guide](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/)\.
+
 **Topics**
 + [Prerequisites](#install-prereq)
 + [Step 1: Get a VPN Client Application](#install-client)
@@ -18,7 +20,7 @@ To establish a VPN connection, you must have the following:
 
 You can connect to a Client VPN endpoint and establish a VPN connection using the AWS\-provided client or another OpenVPN\-based client application\. 
 
-The AWS\-provided client is supported on Windows and macOS\. You can download the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
+The AWS\-provided client is a supported on Windows and macOS\. You can download the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
 
 Alternatively, download and install an OpenVPN client application on the device from which you intend to establish the VPN connection\.
 

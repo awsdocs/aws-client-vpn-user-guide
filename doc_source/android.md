@@ -5,6 +5,8 @@ The following procedure shows how to establish a VPN connection using the OpenVP
 **Note**  
 For more information about the OpenVPN client application for Android, see the [FAQ regarding OpenVPN Connect Android](https://openvpn.net/vpn-server-resources/faq-regarding-openvpn-connect-android/) on the OpenVPN website\.
 
+Before you begin, ensure that your Client VPN administrator has created a Client VPN endpoint and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html#cvpn-getting-started-config)\.
+
 **To establish a VPN connection**
 
 1. Start the OpenVPN client application and choose **OVPN Profile**\.  

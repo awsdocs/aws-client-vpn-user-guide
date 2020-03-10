@@ -7,6 +7,7 @@ You can download the latest version of the client at [AWS Client VPN download](h
 
 | Version | Changes | Date | 
 | --- | --- | --- | 
+| 1\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | March 9, 2020 | 
 | 1\.0\.0 | The initial release of the AWS\-provided client\. | February 4, 2020 | 
 
 ## Supported OpenVPN Directives<a name="openvpn-directives"></a>
