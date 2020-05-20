@@ -1,4 +1,4 @@
-# Connect Using the AWS\-Provided Client<a name="connect-aws-client-vpn-connect"></a>
+# Connect using the AWS\-provided client<a name="connect-aws-client-vpn-connect"></a>
 
 The following topics provide steps for connecting to a Client VPN endpoint using the AWS\-provided client\.
 
@@ -9,4 +9,4 @@ The AWS\-provided client is currently supported on Windows and macOS only\.
 **Topics**
 + [Windows](client-vpn-connect-windows.md)
 + [macOS](client-vpn-connect-macos.md)
-+ [Release Notes for the AWS\-Provided Client](release-notes.md)
++ [Release notes for the AWS\-provided client](release-notes.md)

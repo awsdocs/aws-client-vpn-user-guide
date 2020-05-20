@@ -1,13 +1,13 @@
-# MacOS Troubleshooting<a name="macos-troubleshooting"></a>
+# MacOS troubleshooting<a name="macos-troubleshooting"></a>
 
 The following are problems you might have when using MacOS\-based clients to connect to a Client VPN endpoint\.
 
 **Topics**
-+ [AWS\-Provided Client](#macos-troubleshooting-client-vpn-connect)
++ [AWS\-provided client](#macos-troubleshooting-client-vpn-connect)
 + [Tunnelblick](#macos-troubleshooting-tunnelblick)
 + [OpenVPN](#macos-troubleshooting-openvpn)
 
-## AWS\-Provided Client<a name="macos-troubleshooting-client-vpn-connect"></a>
+## AWS\-provided client<a name="macos-troubleshooting-client-vpn-connect"></a>
 
 The AWS\-provided client creates event logs and stores them in the following location on your computer\.
 
@@ -26,12 +26,18 @@ The AWS\-provided client uses the client daemon to perform root operations\. The
 /tmp/AcvcHelperOutLog.txt
 ```
 
-**Topics**
-+ [Client Cannot Connect](#macos-troubleshooting-client-vpn-cannot-connect)
-+ [Client is Stuck in a Reconnecting State](#macos-troubleshooting-client-vpn-stuck)
-+ [Client Cannot Create Profile](#macos-troubleshooting-client-vpn-cannot-create-profile)
+The AWS\-provided client stores the configuration files in the following location on your computer\.
 
-### Client Cannot Connect<a name="macos-troubleshooting-client-vpn-cannot-connect"></a>
+```
+/Users/username/.config/AWSVPNClient/OpenVpnConfigs
+```
+
+**Topics**
++ [Client cannot connect](#macos-troubleshooting-client-vpn-cannot-connect)
++ [Client is stuck in a reconnecting state](#macos-troubleshooting-client-vpn-stuck)
++ [Client cannot create profile](#macos-troubleshooting-client-vpn-cannot-create-profile)
+
+### Client cannot connect<a name="macos-troubleshooting-client-vpn-cannot-connect"></a>
 
 **Problem**  
 The AWS\-provided client cannot connect to the Client VPN endpoint\.
@@ -46,7 +52,7 @@ Check that there are no other OpenVPN applications running on your computer\. If
 + The configuration file contains the correct client key and certificate\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
 + The CRL is still valid\. For more information, see [Clients Unable to Connect to a Client VPN Endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#client-cannot-connect) in the *AWS Client VPN Administrator Guide*\.
 
-### Client is Stuck in a Reconnecting State<a name="macos-troubleshooting-client-vpn-stuck"></a>
+### Client is stuck in a reconnecting state<a name="macos-troubleshooting-client-vpn-stuck"></a>
 
 **Problem**  
 The AWS\-provided client is trying to connect to the Client VPN endpoint, but is stuck in a reconnecting state\.
@@ -60,7 +66,7 @@ The cause of this problem might be one of the following:
 **Solution**  
 Check that your computer is connected to the internet\. Ask your Client VPN administrator to verify that the `remote` directive in the configuration file resolves to a valid IP address\. You can also disconnect the VPN session by choosing **Disconnect** in the AWS VPN Client window, and try connecting again\.
 
-### Client Cannot Create Profile<a name="macos-troubleshooting-client-vpn-cannot-create-profile"></a>
+### Client cannot create profile<a name="macos-troubleshooting-client-vpn-cannot-create-profile"></a>
 
 **Problem**  
 You get the following error when you try to create a profile using the AWS\-provided client\.
@@ -99,7 +105,7 @@ The connection logs are stored in the following location on your computer\.
 
 To increase the log verbosity, open the Tunnelblick application, choose **Settings**, and adjust the value for **VPN log level**\.
 
-### Cipher Algorithm 'AES\-256\-GCM' Not Found<a name="tunnelblick-cipher"></a>
+### Cipher algorithm 'AES\-256\-GCM' not found<a name="tunnelblick-cipher"></a>
 
 **Problem**  
 The connection fails and returns the following error in the logs\.
@@ -121,7 +127,7 @@ Choose a compatible OpenVPN version by doing the following:
 
 1. For **OpenVPN version**, choose **2\.4\.6 \- OpenSSL version is v1\.0\.2q**\.
 
-### Connection Hangs and Resets<a name="tunnelblick-connection-reset"></a>
+### Connection hangs and resets<a name="tunnelblick-connection-reset"></a>
 
 **Problem**  
 The connection fails and returns the following error in the logs\.
@@ -146,7 +152,7 @@ The client certificate has been revoked\. The connection hangs after trying to a
 **Solution**  
 Request a new configuration file from your Client VPN administrator\.
 
-### Invalid Certificate<a name="tunnelblick-invalid-certificate"></a>
+### Invalid certificate<a name="tunnelblick-invalid-certificate"></a>
 
 **Problem**  
 The connection fails and returns the following error in the logs\.
@@ -190,7 +196,7 @@ Ob8VZRzI9neWagqNdwvYkQsEjgfbKbYK7p2CNTUQ
 -----END CERTIFICATE-----
 ```
 
-### Extended Key Usage \(EKU\)<a name="tunnelblick-eku"></a>
+### Extended key usage \(EKU\)<a name="tunnelblick-eku"></a>
 
 **Problem**  
 The connection fails and returns the following error in the logs\.
@@ -215,7 +221,7 @@ The server authentication succeeded\. However, the client authentication fails b
 **Solution**  
 Ensure that you are using correct client certificate and key\. If necessary, verify with your Client VPN administrator\. This error might occur if you're using the server certificate and not the client certificate to connect to the Client VPN endpoint\.
 
-### Expired Certificate<a name="tunnelblick-certificate-expired"></a>
+### Expired certificate<a name="tunnelblick-certificate-expired"></a>
 
 **Problem**  
 The server authentication succeeds but the client authentication fails with the following error\.
@@ -246,7 +252,7 @@ The connection logs are stored in the following location on your computer\.
 Library/Application Support/OpenVPN/log/connection_name.log
 ```
 
-### Cannot Resolve DNS<a name="macos-openvpn-dns"></a>
+### Cannot resolve DNS<a name="macos-openvpn-dns"></a>
 
 **Problem**  
 The connection fails with the following error\.

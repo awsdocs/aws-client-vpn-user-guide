@@ -1,8 +1,8 @@
-# Common Problems<a name="common-troubleshooting"></a>
+# Common problems<a name="common-troubleshooting"></a>
 
 The following are common problems you might have when using a client to connect to a Client VPN endpoint\.
 
-## TLS Key Negotiation Failed<a name="common-troubleshooting-tls"></a>
+## TLS key negotiation failed<a name="common-troubleshooting-tls"></a>
 
 **Problem**  
 The TLS negotiation fails with the following error\.

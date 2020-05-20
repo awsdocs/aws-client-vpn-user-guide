@@ -2,9 +2,9 @@
 
 The following procedures show how to establish a VPN connection using macOS\-based VPN clients\.
 
-Before you begin, ensure that your Client VPN administrator has created a Client VPN endpoint and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html#cvpn-getting-started-config)\.
+Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export)\.
 
-For troubleshooting information, see [MacOS Troubleshooting](macos-troubleshooting.md)\.
+For troubleshooting information, see [MacOS troubleshooting](macos-troubleshooting.md)\.
 
 ## Tunnelblick<a name="macos-tunnelblick"></a>
 
