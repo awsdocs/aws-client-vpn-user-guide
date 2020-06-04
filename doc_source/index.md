@@ -14,6 +14,7 @@ Amazon's trademarks and trade dress may not be used in
 
 -----
 ## Contents
++ [What is AWS Client VPN?](client-vpn-user-what-is.md)
 + [Getting started with Client VPN](user-getting-started.md)
 + [Connect using the AWS-provided client](connect-aws-client-vpn-connect.md)
    + [Windows](client-vpn-connect-windows.md)
