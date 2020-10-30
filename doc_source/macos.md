@@ -6,6 +6,9 @@ Before you begin, ensure that your Client VPN administrator has [created a Clien
 
 For troubleshooting information, see [MacOS troubleshooting](macos-troubleshooting.md)\.
 
+**Important**  
+If the Client VPN endpoint has been configured to use [SAML\-based federated authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-authentication.html#federated-authentication), you must use the [AWS\-provided client](connect-aws-client-vpn-connect.md) to connect\.
+
 ## Tunnelblick<a name="macos-tunnelblick"></a>
 
 The following procedure shows how to establish a VPN connection using the Tunnelblick client application on a macOS computer\.

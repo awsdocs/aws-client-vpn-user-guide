@@ -3,13 +3,13 @@
 The following are problems you might have when using Windows\-based clients to connect to a Client VPN endpoint\.
 
 **Topics**
-+ [AWS\-provided client](#windows-troubleshooting-client-vpn-connect)
++ [AWS provided client](#windows-troubleshooting-client-vpn-connect)
 + [OpenVPN connect client](#windows-troubleshooting-openvpn-connect)
 + [OpenVPN GUI](#windows-troubleshooting-openvpn-gui)
 
-## AWS\-provided client<a name="windows-troubleshooting-client-vpn-connect"></a>
+## AWS provided client<a name="windows-troubleshooting-client-vpn-connect"></a>
 
-The AWS\-provided client creates event logs and stores them in the following location on your computer\.
+The AWS provided client creates event logs and stores them in the following location on your computer\.
 
 ```
 C:\Users\User\AppData\Roaming\AWSVPNClient\logs
@@ -19,7 +19,7 @@ The following types of logs are available:
 + **Application logs**: Contain information about the application\. These logs are prefixed with 'aws\_vpn\_client\_'\.
 + **OpenVPN logs**: Contain information about OpenVPN processes\. These logs are prefixed with 'ovpn\_aws\_vpn\_client\_'\.
 
-The AWS\-provided client uses the Windows service to perform root operations\. Windows service logs are stored in the following location on your computer\.
+The AWS provided client uses the Windows service to perform root operations\. Windows service logs are stored in the following location on your computer\.
 
 ```
 C:\Program Files\Amazon\AWS VPN Client\WinServiceLogs\username
@@ -35,7 +35,7 @@ C:\Program Files\Amazon\AWS VPN Client\WinServiceLogs\username
 ### Client cannot connect<a name="windows-troubleshooting-client-vpn-cannot-connect"></a>
 
 **Problem**  
-The AWS\-provided client cannot connect to the Client VPN endpoint\.
+The AWS provided client cannot connect to the Client VPN endpoint\.
 
 **Cause**  
 The cause of this problem might be one of the following:
@@ -50,7 +50,7 @@ Check that there are no other OpenVPN applications running on your computer\. If
 ### Client is stuck in a reconnecting state<a name="windows-troubleshooting-client-vpn-stuck"></a>
 
 **Problem**  
-The AWS\-provided client is trying to connect to the Client VPN endpoint, but is stuck in a reconnecting state\.
+The AWS provided client is trying to connect to the Client VPN endpoint, but is stuck in a reconnecting state\.
 
 **Cause**  
 The cause of this problem might be one of the following:
@@ -70,23 +70,23 @@ While connecting to a Client VPN endpoint, the client quits unexpectedly\.
 TAP\-Windows is not installed on your computer\. This software is required to run the client\.
 
 **Solution**  
-Rerun the AWS\-provided client installer to install all the required dependencies\.
+Rerun the AWS provided client installer to install all the required dependencies\.
 
 ### Application fails to launch<a name="windows-troubleshooting-client-vpn-cannot-launch"></a>
 
 **Problem**  
-On Windows 7, the AWS\-provided client does not launch when you try to open it\.
+On Windows 7, the AWS provided client does not launch when you try to open it\.
 
 **Cause**  
 \.NET Framework 4\.7\.2 or higher is not installed on your computer\. This is required to run the client\.
 
 **Solution**  
-Rerun the AWS\-provided client installer to install all the required dependencies\.
+Rerun the AWS provided client installer to install all the required dependencies\.
 
 ### Client cannot create profile<a name="windows-troubleshooting-client-vpn-cannot-create-profile"></a>
 
 **Problem**  
-You get the following error when you try to create a profile using the AWS\-provided client\.
+You get the following error when you try to create a profile using the AWS provided client\.
 
 ```
 The config should have either cert and key or auth-user-pass specified.

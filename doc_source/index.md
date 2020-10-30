@@ -16,10 +16,11 @@ Amazon's trademarks and trade dress may not be used in
 ## Contents
 + [What is AWS Client VPN?](client-vpn-user-what-is.md)
 + [Getting started with Client VPN](user-getting-started.md)
-+ [Connect using the AWS-provided client](connect-aws-client-vpn-connect.md)
+   + [Use the self-service portal](self-service-portal.md)
++ [Connect using the AWS provided client](connect-aws-client-vpn-connect.md)
    + [Windows](client-vpn-connect-windows.md)
    + [macOS](client-vpn-connect-macos.md)
-   + [Release notes for the AWS-provided client](release-notes.md)
+   + [Release notes for the AWS provided client](release-notes.md)
 + [Connect using an OpenVPN client](connect.md)
    + [Windows](windows.md)
    + [Android and iOS](android.md)

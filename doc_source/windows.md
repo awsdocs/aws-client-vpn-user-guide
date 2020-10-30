@@ -6,6 +6,9 @@ Before you begin, ensure that your Client VPN administrator has [created a Clien
 
 For troubleshooting information, see [Windows troubleshooting](windows-troubleshooting.md)\.
 
+**Important**  
+If the Client VPN endpoint has been configured to use [SAML\-based federated authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-authentication.html#federated-authentication), you must use the [AWS\-provided client](connect-aws-client-vpn-connect.md) to connect\.
+
 ## OpenVPN GUI<a name="windows-openvpn-gui"></a>
 
 The following procedure shows how to establish a VPN connection using the OpenVPN GUI client application on a Windows computer\.

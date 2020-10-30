@@ -9,6 +9,7 @@ For more information about creating a Client VPN endpoint, see the [AWS Client V
 + [Step 1: Get a VPN client application](#install-client)
 + [Step 2: Get the Client VPN endpoint configuration file](#get-config-file)
 + [Step 3: Connect to the VPN](#import-connect)
++ [Use the self\-service portal](self-service-portal.md)
 
 ## Prerequisites<a name="install-prereq"></a>
 
@@ -23,9 +24,9 @@ To establish a VPN connection, you must have the following:
 
 ## Step 1: Get a VPN client application<a name="install-client"></a>
 
-You can connect to a Client VPN endpoint and establish a VPN connection using the AWS\-provided client or another OpenVPN\-based client application\. 
+You can connect to a Client VPN endpoint and establish a VPN connection using the AWS provided client or another OpenVPN\-based client application\. 
 
-The AWS\-provided client is a supported on Windows and macOS\. You can download the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
+The AWS provided client is a supported on Windows and macOS\. You can download the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
 
 Alternatively, download and install an OpenVPN client application on the device from which you intend to establish the VPN connection\.
 
@@ -33,12 +34,14 @@ Alternatively, download and install an OpenVPN client application on the device 
 
 You must get the Client VPN endpoint configuration file from your administrator\. The configuration file includes the information about the Client VPN endpoint and the certificates required to establish a VPN connection\.
 
+Alternatively, if your Client VPN administrator has configured a self\-service portal for the Client VPN endpoint, you can download the latest version of the AWS provided client and the latest version of the Client VPN endpoint configuration file yourself\. For more information, see [Use the self\-service portal](self-service-portal.md)\.
+
 ## Step 3: Connect to the VPN<a name="import-connect"></a>
 
-Import the Client VPN endpoint configuration file to the AWS\-provided client or to your OpenVPN client application and connect to the VPN\. For steps to connect to a VPN, see the following topics:
-+ [Connect using the AWS\-provided client](connect-aws-client-vpn-connect.md)
+Import the Client VPN endpoint configuration file to the AWS provided client or to your OpenVPN client application and connect to the VPN\. For steps to connect to a VPN, see the following topics:
++ [Connect using the AWS provided client](connect-aws-client-vpn-connect.md)
 + [Connect using an OpenVPN client](connect.md)
 
 For Client VPN endpoints that use Active Directory authentication, you will be prompted to enter your user name and password\. If multi\-factor authentication \(MFA\) has been enabled for the directory, you will also be prompted to enter your MFA code\.
 
-For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\), the AWS\-provided client opens a browser window on your computer\. You'll be prompted to enter your corporate credentials before you can connect to the Client VPN endpoint\.
+For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\), the AWS provided client opens a browser window on your computer\. You'll be prompted to enter your corporate credentials before you can connect to the Client VPN endpoint\.

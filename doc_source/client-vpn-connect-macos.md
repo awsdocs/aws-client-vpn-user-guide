@@ -1,11 +1,11 @@
 # macOS<a name="client-vpn-connect-macos"></a>
 
-The following procedure shows how to establish a VPN connection using the AWS\-provided client for macOS\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
+The following procedure shows how to establish a VPN connection using the AWS provided client for macOS\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
 
 ## Requirements<a name="client-vpn-connect-macos-req"></a>
 
-To use the AWS\-provided client for macOS, the following is required:
-+ macOS High Sierra \(10\.13\), Mojave \(10\.14\), or Catalina \(10\.15\)
+To use the AWS provided client for macOS, the following is required:
++ 64\-bit macOS High Sierra \(10\.13\), Mojave \(10\.14\), or Catalina \(10\.15\) 
 
 The client reserves TCP port 8096 on your computer\. For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\) the client reserves TCP port 35001\.
 
@@ -13,9 +13,9 @@ Before you begin, ensure that your Client VPN administrator has [created a Clien
 
 ## Connecting<a name="client-vpn-connect-macos-connecting"></a>
 
-Before you begin, ensure that you've read the [requirements](#client-vpn-connect-macos-req)\. The AWS\-provided client is also referred to as *AWS VPN Client* in the following steps\.
+Before you begin, ensure that you've read the [requirements](#client-vpn-connect-macos-req)\. The AWS provided client is also referred to as *AWS VPN Client* in the following steps\.
 
-**To connect using the AWS\-provided client for macOS**
+**To connect using the AWS provided client for macOS**
 
 1. Open the **AWS VPN Client** app\.
 
@@ -41,7 +41,7 @@ Before you begin, ensure that you've read the [requirements](#client-vpn-connect
 
 ## Troubleshooting<a name="client-vpn-connect-macos-troubleshooting"></a>
 
-The AWS\-provided client stores log files and configuration files in the following location on your device:
+The AWS provided client stores log files and configuration files in the following location on your device:
 
 ```
 /Users/username/.config/AWSVPNClient/

@@ -1,11 +1,11 @@
 # Windows<a name="client-vpn-connect-windows"></a>
 
-The following procedure shows how to establish a VPN connection using the AWS\-provided client for Windows\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
+The following procedure shows how to establish a VPN connection using the AWS provided client for Windows\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
 
 ## Requirements<a name="client-vpn-connect-windows-req"></a>
 
-To use the AWS\-provided client for Windows, the following are required:
-+ Windows 10
+To use the AWS provided client for Windows, the following are required:
++ Windows 10 64\-bit operating system, x64 processor
 + \.NET Framework 4\.7\.2 or higher
 
 The client reserves TCP port 8096 on your computer\. For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\), the client reserves TCP port 35001\.
@@ -14,9 +14,9 @@ Before you begin, ensure that your Client VPN administrator has [created a Clien
 
 ## Connecting<a name="client-vpn-connect-windows-connecting"></a>
 
-Before you begin, ensure that you've read the [requirements](#client-vpn-connect-windows-req)\. The AWS\-provided client is also referred to as *AWS VPN Client* in the following steps\.
+Before you begin, ensure that you've read the [requirements](#client-vpn-connect-windows-req)\. The AWS provided client is also referred to as *AWS VPN Client* in the following steps\.
 
-**To connect using the AWS\-provided client for Windows**
+**To connect using the AWS provided client for Windows**
 
 1. Open the **AWS VPN Client** app\.
 
@@ -40,7 +40,7 @@ Before you begin, ensure that you've read the [requirements](#client-vpn-connect
 
 ## Troubleshooting<a name="client-vpn-connect-windows-troubleshooting"></a>
 
-The AWS\-provided client stores log files and configuration files in the following location on your device:
+The AWS provided client stores log files and configuration files in the following location on your device:
 
 ```
 C:\Users\User\AppData\Roaming\AWSVPNClient

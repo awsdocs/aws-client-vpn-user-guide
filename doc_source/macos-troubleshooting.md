@@ -3,13 +3,13 @@
 The following are problems you might have when using MacOS\-based clients to connect to a Client VPN endpoint\.
 
 **Topics**
-+ [AWS\-provided client](#macos-troubleshooting-client-vpn-connect)
++ [AWS provided client](#macos-troubleshooting-client-vpn-connect)
 + [Tunnelblick](#macos-troubleshooting-tunnelblick)
 + [OpenVPN](#macos-troubleshooting-openvpn)
 
-## AWS\-provided client<a name="macos-troubleshooting-client-vpn-connect"></a>
+## AWS provided client<a name="macos-troubleshooting-client-vpn-connect"></a>
 
-The AWS\-provided client creates event logs and stores them in the following location on your computer\.
+The AWS provided client creates event logs and stores them in the following location on your computer\.
 
 ```
 /Users/username/.config/AWSVPNClient/logs
@@ -19,14 +19,14 @@ The following types of logs are available:
 + **Application logs**: Contain information about the application\. These logs are prefixed with 'aws\_vpn\_client\_'\.
 + **OpenVPN logs**: Contain information about OpenVPN processes\. These logs are prefixed with 'ovpn\_aws\_vpn\_client\_'\.
 
-The AWS\-provided client uses the client daemon to perform root operations\. The daemon logs are stored in the following locations on your computer\.
+The AWS provided client uses the client daemon to perform root operations\. The daemon logs are stored in the following locations on your computer\.
 
 ```
 /tmp/AcvcHelperErrLog.txt
 /tmp/AcvcHelperOutLog.txt
 ```
 
-The AWS\-provided client stores the configuration files in the following location on your computer\.
+The AWS provided client stores the configuration files in the following location on your computer\.
 
 ```
 /Users/username/.config/AWSVPNClient/OpenVpnConfigs
@@ -40,7 +40,7 @@ The AWS\-provided client stores the configuration files in the following locatio
 ### Client cannot connect<a name="macos-troubleshooting-client-vpn-cannot-connect"></a>
 
 **Problem**  
-The AWS\-provided client cannot connect to the Client VPN endpoint\.
+The AWS provided client cannot connect to the Client VPN endpoint\.
 
 **Cause**  
 The cause of this problem might be one of the following:
@@ -55,7 +55,7 @@ Check that there are no other OpenVPN applications running on your computer\. If
 ### Client is stuck in a reconnecting state<a name="macos-troubleshooting-client-vpn-stuck"></a>
 
 **Problem**  
-The AWS\-provided client is trying to connect to the Client VPN endpoint, but is stuck in a reconnecting state\.
+The AWS provided client is trying to connect to the Client VPN endpoint, but is stuck in a reconnecting state\.
 
 **Cause**  
 The cause of this problem might be one of the following:
@@ -69,7 +69,7 @@ Check that your computer is connected to the internet\. Ask your Client VPN admi
 ### Client cannot create profile<a name="macos-troubleshooting-client-vpn-cannot-create-profile"></a>
 
 **Problem**  
-You get the following error when you try to create a profile using the AWS\-provided client\.
+You get the following error when you try to create a profile using the AWS provided client\.
 
 ```
 The config should have either cert and key or auth-user-pass specified.
@@ -127,7 +127,7 @@ Choose a compatible OpenVPN version by doing the following:
 
 1. For **OpenVPN version**, choose **2\.4\.6 \- OpenSSL version is v1\.0\.2q**\.
 
-### Connection hangs and resets<a name="tunnelblick-connection-reset"></a>
+### Connection stops responding and resets<a name="tunnelblick-connection-reset"></a>
 
 **Problem**  
 The connection fails and returns the following error in the logs\.
@@ -147,7 +147,7 @@ SIGUSR1[soft,connection-reset] received, process restarting
 ```
 
 **Cause**  
-The client certificate has been revoked\. The connection hangs after trying to authenticate and is eventually reset from the server side\.
+The client certificate has been revoked\. The connection stops responding after trying to authenticate and is eventually reset from the server side\.
 
 **Solution**  
 Request a new configuration file from your Client VPN administrator\.

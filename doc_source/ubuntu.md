@@ -6,6 +6,9 @@ Before you begin, ensure that your Client VPN administrator has [created a Clien
 
 For troubleshooting information, see [Ubuntu troubleshooting](ubuntu-troubleshooting.md)\.
 
+**Important**  
+If the Client VPN endpoint has been configured to use [SAML\-based federated authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-authentication.html#federated-authentication), you must use the [AWS\-provided client](connect-aws-client-vpn-connect.md) to connect\.
+
 ## OpenVPN \- Network Manager<a name="ubuntu-network-manager-openvpn"></a>
 
 The following procedure shows how to establish a VPN connection using the OpenVPN application through the Network Manager GUI on an Ubuntu computer\.
