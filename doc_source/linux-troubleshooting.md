@@ -1,30 +1,55 @@
-# Ubuntu troubleshooting<a name="ubuntu-troubleshooting"></a>
+# Linux troubleshooting<a name="linux-troubleshooting"></a>
 
- The following are problems you might have when using Ubuntu\-based clients to connect to a Client VPN endpoint, including the following:
-+ OpenVPN through Network Manager \(GUI\)
-+ OpenVPN \(command line\)
+The following sections contain information about logging, and about problems that you might have when using Linux\-based clients\. Please ensure that you are running the latest version of these clients\. 
 
-Ensure that you are running the latest version of these clients\. 
+**Topics**
++ [AWS provided client](#aws-provided-client)
++ [OpenVPN \(command line\)](#open-vpn-command-line)
++ [OpenVPN through Network Manager \(GUI\)](#open-vpn-network-manager-gui)
 
-The connection logs are stored in the following location on your computer:
+## AWS provided client<a name="aws-provided-client"></a>
 
-```
-/var/log/syslog
-```
-
-You can enable advanced debugging using the OpenVPN command line client\. Open the Client VPN configuration file \(the \.ovpn file\) and replace verb 3 with verb 5 or higher, and specify the log location, as shown in the following example\. 
+The AWS provided client stores log files and configuration files in the following location on your system:
 
 ```
-log /var/log/vpn-log.log
+/home/username/.config/AWSVPNClient/
 ```
 
-Run the OpenVPN client using the `--log` option, as shown in the following example\.
+The AWS provided client daemon process stores log files in the following location on your system:
 
 ```
-sudo openvpn --log vpn-log.log --config test1.ovpn 
+/var/log/aws-vpn-client/username/
 ```
 
-## DNS server configuration<a name="ubuntu-troubleshooting-dns-server"></a>
+**Problem**  
+Under some circumstances after a VPN connection is established, DNS queries will still go to the default system nameserver, instead of the nameservers that are configured for the ClientVPN endpoint\.
+
+**Cause**  
+The AWS VPN Client interacts with **systemd\-resolved**, a service available on Linux systems, which serves as a central piece of DNS management\. It is used to configure DNS servers that are pushed from the ClientVPN endpoint\. The problem occurs because **systemd\-resolved** doesn't set the highest priority to DNS servers that are provided by the ClientVPN endpoint\. Instead, it appends the servers to the existing list of DNS servers that are configured on the local system\. As a result, the original DNS servers might still have the highest priority, and therefore be used to resolve DNS queries\. 
+
+**Solution**
+
+1. Add the following directive in the OpenVPN config, to make sure that all DNS queries are sent into the VPN tunnel\.
+
+   ```
+   dhcp-option DOMAIN-ROUTE .
+   ```
+
+1. Use the stub resolver provided by **systemd\-resolved**\. To do this, symlink `/etc/resolv.conf` to `/run/systemd/resolve/stub-resolv.conf` by running the following command on the system\.
+
+   ```
+   sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+   ```
+
+1. \(Optional\) If you do not want **systemd\-resolved** to proxy DNS queries, and instead would like the queries to be sent to the real DNS nameservers directly, symlink `/etc/resolv.conf` to `/run/systemd/resolve/resolv.conf` instead\.
+
+   ```
+   sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+   ```
+
+   You might want to do this procedure in order to bypass the **systemd\-resolved** configuration, for example for DNS answer caching, per\-interface DNS configuration, DNSSec enforcement, and so on\. This option is especially useful when you have a need to override a public DNS record with a private record when connected to VPN\. For example, you might have a private DNS resolver in your private VPC with a record for www\.example\.com, which resolves to a private IP\. This option could be used to override the public record of www\.example\.com, which resolves to a public IP\.
+
+## OpenVPN \(command line\)<a name="open-vpn-command-line"></a>
 
 **Problem**  
 The connection does not function correctly because DNS resolution is not working\.
@@ -78,7 +103,7 @@ Use the following steps to check that the DNS server is configured and working c
    dhcp-option DNS 192.168.0.2
    ```
 
-## Cannot resolve DNS<a name="ubuntu-troubleshooting-dns-resolution"></a>
+## OpenVPN through Network Manager \(GUI\)<a name="open-vpn-network-manager-gui"></a>
 
 **Problem**  
 When using the Network Manager OpenVPN client, the connection fails with the following error\.

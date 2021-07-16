@@ -1,6 +1,6 @@
-# MacOS troubleshooting<a name="macos-troubleshooting"></a>
+# macOS troubleshooting<a name="macos-troubleshooting"></a>
 
-The following are problems you might have when using MacOS\-based clients to connect to a Client VPN endpoint\.
+The following sections contain information about logging and problems that you might have when using macOS clients\. Please ensure that you are running the latest version of these clients\. 
 
 **Topics**
 + [AWS provided client](#macos-troubleshooting-client-vpn-connect)
@@ -45,12 +45,12 @@ The AWS provided client cannot connect to the Client VPN endpoint\.
 **Cause**  
 The cause of this problem might be one of the following:
 + Another OpenVPN process is already running on your computer, which prevents the client from connecting\.
-+ Your configuration \(\.ovpn\) file is invalid\.
++ Your configuration \(\.ovpn\) file is not valid\.
 
 **Solution**  
-Check that there are no other OpenVPN applications running on your computer\. If there are, stop or quit these processes and try connecting to the Client VPN endpoint again\. Check the OpenVPN logs for errors, and ask your Client VPN administrator to verify the following information:
-+ The configuration file contains the correct client key and certificate\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
-+ The CRL is still valid\. For more information, see [Clients Unable to Connect to a Client VPN Endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#client-cannot-connect) in the *AWS Client VPN Administrator Guide*\.
+Check to see if there are other OpenVPN applications running on your computer\. If there are, stop or quit these processes and try connecting to the Client VPN endpoint again\. Check the OpenVPN logs for errors, and ask your Client VPN administrator to verify the following information:
++ That the configuration file contains the correct client key and certificate\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
++ That the CRL is still valid\. For more information, see [Clients Unable to Connect to a Client VPN Endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#client-cannot-connect) in the *AWS Client VPN Administrator Guide*\.
 
 ### Client is stuck in a reconnecting state<a name="macos-troubleshooting-client-vpn-stuck"></a>
 
@@ -59,12 +59,12 @@ The AWS provided client is trying to connect to the Client VPN endpoint, but is 
 
 **Cause**  
 The cause of this problem might be one of the following:
-+ You computer is not connected to the internet\.
++ Your computer is not connected to the internet\.
 + The DNS hostname does not resolve to an IP address\.
 + An OpenVPN process is indefinitely trying to connect to the endpoint\.
 
 **Solution**  
-Check that your computer is connected to the internet\. Ask your Client VPN administrator to verify that the `remote` directive in the configuration file resolves to a valid IP address\. You can also disconnect the VPN session by choosing **Disconnect** in the AWS VPN Client window, and try connecting again\.
+Verify that your computer is connected to the internet\. Ask your Client VPN administrator to verify that the `remote` directive in the configuration file resolves to a valid IP address\. You can also disconnect the VPN session by choosing **Disconnect** in the AWS VPN Client window, and try connecting again\.
 
 ### Client cannot create profile<a name="macos-troubleshooting-client-vpn-cannot-create-profile"></a>
 
@@ -152,50 +152,6 @@ The client certificate has been revoked\. The connection stops responding after 
 **Solution**  
 Request a new configuration file from your Client VPN administrator\.
 
-### Invalid certificate<a name="tunnelblick-invalid-certificate"></a>
-
-**Problem**  
-The connection fails and returns the following error in the logs\.
-
-```
-VERIFY ERROR: depth=1, error=unable to get issuer certificate: C=US, O=Let's Encrypt, CN=Let's Encrypt Authority X3
-OpenSSL: error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed
-TLS_ERROR: BIO read tls_read_plaintext error
-TLS Error: TLS object -> incoming plaintext read error
-TLS Error: TLS handshake failed
-Fatal TLS error (check_tls_errors_co), restarting
-SIGUSR1[soft,tls-error] received, process restarting
-```
-
-**Cause**  
-The issuer certificate is not valid in the \.ovpn configuration file\.
-
-**Solution**  
-Open the Client VPN configuration file \(the \.ovpn file\) in a text editor, and add the following certificate to the file\.
-
-```
------BEGIN CERTIFICATE-----
-MIIDSjCCAjKgAwIBAgIQRK+wgNajJ7qJMDmGLvhAazANBgkqhkiG9w0BAQUFADA/
-MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
-DkRTVCBSb290IENBIFgzMB4XDTAwMDkzMDIxMTIxOVoXDTIxMDkzMDE0MDExNVow
-PzEkMCIGA1UEChMbRGlnaXRhbCBTaWduYXR1cmUgVHJ1c3QgQ28uMRcwFQYDVQQD
-Ew5EU1QgUm9vdCBDQSBYMzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
-AN+v6ZdQCINXtMxiZfaQguzH0yxrMMpb7NnDfcdAwRgUi+DoM3ZJKuM/IUmTrE4O
-rz5Iy2Xu/NMhD2XSKtkyj4zl93ewEnu1lcCJo6m67XMuegwGMoOifooUMM0RoOEq
-OLl5CjH9UL2AZd+3UWODyOKIYepLYYHsUmu5ouJLGiifSKOeDNoJjj4XLh7dIN9b
-xiqKqy69cK3FCxolkHRyxXtqqzTWMIn/5WgTe1QLyNau7Fqckh49ZLOMxt+/yUFw
-7BZy1SbsOFU5Q9D8/RhcQPGX69Wam40dutolucbY38EVAjqr2m7xPi71XAicPNaD
-aeQQmxkqtilX4+U9m5/wAl0CAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNV
-HQ8BAf8EBAMCAQYwHQYDVR0OBBYEFMSnsaR7LHH62+FLkHX/xBVghYkQMA0GCSqG
-SIb3DQEBBQUAA4IBAQCjGiybFwBcqR7uKGY3Or+Dxz9LwwmglSBd49lZRNI+DT69
-ikugdB/OEIKcdBodfpga3csTS7MgROSR6cz8faXbauX+5v3gTt23ADq1cEmv8uXr
-AvHRAosZy5Q6XkjEGB5YGV8eAlrwDPGxrancWYaLbumR9YbK+rlmM6pZW87ipxZz
-R8srzJmwN0jP41ZL9c8PDHIyh8bwRLtTcm1D9SZImlJnt1ir/md2cXjbDaJWFBM5
-JDGFoqgCWjBH4d1QB7wCCZAA62RjYJsWvIjJEubSfZGL+T0yjWW06XyxV3bqxbYo
-Ob8VZRzI9neWagqNdwvYkQsEjgfbKbYK7p2CNTUQ
------END CERTIFICATE-----
-```
-
 ### Extended key usage \(EKU\)<a name="tunnelblick-eku"></a>
 
 **Problem**  
@@ -219,7 +175,7 @@ MANAGEMENT: >STATE:1559138717,RECONNECTING,connection-reset,,,,,
 The server authentication succeeded\. However, the client authentication fails because the client certificate has the extended key usage \(EKU\) field enabled for server authentication\.
 
 **Solution**  
-Ensure that you are using correct client certificate and key\. If necessary, verify with your Client VPN administrator\. This error might occur if you're using the server certificate and not the client certificate to connect to the Client VPN endpoint\.
+Verify that you are using correct client certificate and key\. If necessary, verify with your Client VPN administrator\. This error might occur if you're using the server certificate and not the client certificate to connect to the Client VPN endpoint\.
 
 ### Expired certificate<a name="tunnelblick-certificate-expired"></a>
 

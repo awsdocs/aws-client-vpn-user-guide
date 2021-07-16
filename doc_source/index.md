@@ -1,7 +1,7 @@
 # AWS Client VPN User Guide
 
 -----
-*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -17,18 +17,19 @@ Amazon's trademarks and trade dress may not be used in
 + [What is AWS Client VPN?](client-vpn-user-what-is.md)
 + [Getting started with Client VPN](user-getting-started.md)
    + [Use the self-service portal](self-service-portal.md)
-+ [Connect using the AWS provided client](connect-aws-client-vpn-connect.md)
-   + [Windows](client-vpn-connect-windows.md)
-   + [macOS](client-vpn-connect-macos.md)
++ [Connect using an AWS provided client](connect-aws-client-vpn-connect.md)
+   + [AWS Client VPN for Windows](client-vpn-connect-windows.md)
+   + [AWS Client VPN for macOS](client-vpn-connect-macos.md)
+   + [AWS Client VPN for Linux](client-vpn-connect-linux.md)
    + [Release notes for the AWS provided client](release-notes.md)
 + [Connect using an OpenVPN client](connect.md)
-   + [Windows](windows.md)
-   + [Android and iOS](android.md)
-   + [MacOS](macos.md)
-   + [Ubuntu](ubuntu.md)
+   + [Connect using a Windows client application](windows.md)
+   + [Connect using an Android or iOS VPN client application](android.md)
+   + [Connect using a macOS client application](macos.md)
+   + [Connect using an OpenVPN client application](linux.md)
 + [Troubleshooting your Client VPN connection](troubleshooting.md)
    + [Windows troubleshooting](windows-troubleshooting.md)
-   + [MacOS troubleshooting](macos-troubleshooting.md)
-   + [Ubuntu troubleshooting](ubuntu-troubleshooting.md)
+   + [macOS troubleshooting](macos-troubleshooting.md)
+   + [Linux troubleshooting](linux-troubleshooting.md)
    + [Common problems](common-troubleshooting.md)
 + [Document history](WhatsNew.md)

@@ -1,6 +1,11 @@
-# Windows<a name="client-vpn-connect-windows"></a>
+# AWS Client VPN for Windows<a name="client-vpn-connect-windows"></a>
 
-The following procedure shows how to establish a VPN connection using the AWS provided client for Windows\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
+The following procedure shows how to establish a VPN connection using the AWS provided client for Windows\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\. The AWS provided client does not support automatic updates\.
+
+**Topics**
++ [Requirements](#client-vpn-connect-windows-req)
++ [Connecting](#client-vpn-connect-windows-connecting)
++ [Release notes](#client-vpn-connect-windows-release-notes)
 
 ## Requirements<a name="client-vpn-connect-windows-req"></a>
 
@@ -38,12 +43,6 @@ Before you begin, ensure that you've read the [requirements](#client-vpn-connect
 1. To disconnect, in the **AWS VPN Client** window, choose **Disconnect**\. Alternatively, choose the client icon on the Windows taskbar, and then choose **Disconnect**\.  
 ![\[Windows add profile\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/images/client-vpn-win-disconnect.png)
 
-## Troubleshooting<a name="client-vpn-connect-windows-troubleshooting"></a>
+## Release notes<a name="client-vpn-connect-windows-release-notes"></a>
 
-The AWS provided client stores log files and configuration files in the following location on your device:
-
-```
-C:\Users\User\AppData\Roaming\AWSVPNClient
-```
-
-For troubleshooting information, see [Troubleshooting your Client VPN connection](troubleshooting.md)\.
+To view the release notes and download links for the current and previous versions of AWS Client VPN for Windows, see [Release notes for Windows](release-notes.md#release-notes-windows)\.

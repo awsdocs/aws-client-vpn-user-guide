@@ -1,13 +1,10 @@
-# MacOS<a name="macos"></a>
+# Connect using a macOS client application<a name="macos"></a>
 
 The following procedures show how to establish a VPN connection using macOS\-based VPN clients\.
 
 Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export)\.
 
-For troubleshooting information, see [MacOS troubleshooting](macos-troubleshooting.md)\.
-
-**Important**  
-If the Client VPN endpoint has been configured to use [SAML\-based federated authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-authentication.html#federated-authentication), you must use the [AWS\-provided client](connect-aws-client-vpn-connect.md) to connect\.
+For troubleshooting information, see [macOS troubleshooting](macos-troubleshooting.md)\.
 
 ## Tunnelblick<a name="macos-tunnelblick"></a>
 
@@ -36,6 +33,6 @@ For more information, see [Connecting to Access Server with macOS](https://openv
 
 **To establish a VPN connection**
 
-1. Start the OpenVPN application and choose **Import**, **From local file\.\.\.**\.
+1. Start the OpenVPN application, and choose **Import**, **From local file\.\.\.**\.
 
-1. Navigate to the configuration file that you received from your VPN administrator and choose **Open**\.
+1. Navigate to the configuration file that you received from your VPN administrator, and choose **Open**\.

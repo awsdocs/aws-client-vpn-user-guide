@@ -1,12 +1,35 @@
-# Connect using the AWS provided client<a name="connect-aws-client-vpn-connect"></a>
+# Connect using an AWS provided client<a name="connect-aws-client-vpn-connect"></a>
 
-The following topics provide steps for connecting to a Client VPN endpoint using the AWS provided client\.
-
-The AWS provided client does not support automatic updates\. You can download the latest version at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
-
-The AWS provided client is currently supported on Windows and macOS only\.
+You can connect to a Client VPN endpoint using the AWS provided client\. The AWS provided client is supported on Windows, macOS, Ubuntu 18\.04 LTS and Ubuntu 20\.04 LTS\.
 
 **Topics**
-+ [Windows](client-vpn-connect-windows.md)
-+ [macOS](client-vpn-connect-macos.md)
++ [AWS Client VPN for Windows](client-vpn-connect-windows.md)
++ [AWS Client VPN for macOS](client-vpn-connect-macos.md)
++ [AWS Client VPN for Linux](client-vpn-connect-linux.md)
 + [Release notes for the AWS provided client](release-notes.md)
+
+**OpenVPN directives**
+
+The AWS provided client supports the following OpenVPN directives:
++ auth\-user\-pass
++ ca
++ cert
++ cipher
++ client
++ connect\-retry
++ cryptoapicert \(Windows only\)
++ dev
++ key
++ nobind
++ persist\-key
++ persist\-tun
++ proto
++ remote
++ remote\-cert\-tls
++ remote\-random\-hostname
++ reneg\-sec
++ resolv\-retry
++ static\-challenge
++ tun\-mtu
++ tun\-mtu\-extra
++ verb

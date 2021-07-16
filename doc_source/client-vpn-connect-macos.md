@@ -1,6 +1,11 @@
-# macOS<a name="client-vpn-connect-macos"></a>
+# AWS Client VPN for macOS<a name="client-vpn-connect-macos"></a>
 
-The following procedure shows how to establish a VPN connection using the AWS provided client for macOS\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\.
+The following procedure shows how to establish a VPN connection using the AWS provided client for macOS\. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/)\. The AWS provided client does not support automatic updates\.
+
+**Topics**
++ [Requirements](#client-vpn-connect-macos-req)
++ [Connecting](#client-vpn-connect-macos-connecting)
++ [Release notes](#client-vpn-connect-macos-release-notes)
 
 ## Requirements<a name="client-vpn-connect-macos-req"></a>
 
@@ -13,7 +18,7 @@ Before you begin, ensure that your Client VPN administrator has [created a Clien
 
 ## Connecting<a name="client-vpn-connect-macos-connecting"></a>
 
-Before you begin, ensure that you've read the [requirements](#client-vpn-connect-macos-req)\. The AWS provided client is also referred to as *AWS VPN Client* in the following steps\.
+Before you begin, ensure that you've read the [requirements](#client-vpn-connect-macos-req)\. The AWS provided client is also referred to as the *AWS VPN Client* in the following steps\.
 
 **To connect using the AWS provided client for macOS**
 
@@ -39,12 +44,6 @@ Before you begin, ensure that you've read the [requirements](#client-vpn-connect
 1. To disconnect, in the **AWS VPN Client** window, choose **Disconnect**\. Alternatively, choose the client icon on the menu bar, and then choose **Disconnect *<your\-profile\-name>***\.  
 ![\[macOS disconnect\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/images/client-vpn-mac-disconnect.png)
 
-## Troubleshooting<a name="client-vpn-connect-macos-troubleshooting"></a>
+## Release notes<a name="client-vpn-connect-macos-release-notes"></a>
 
-The AWS provided client stores log files and configuration files in the following location on your device:
-
-```
-/Users/username/.config/AWSVPNClient/
-```
-
-For troubleshooting information, see [Troubleshooting your Client VPN connection](troubleshooting.md)\.
+To view the release notes and download links for the current and previous versions of AWS Client VPN for macOS, see [Release notes for macOS](release-notes.md#release-notes-macos)\.
