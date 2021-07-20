@@ -63,11 +63,18 @@ There are multiple methods that can be used to install the AWS provided client f
    curl https://d20adtppz83p9s.cloudfront.net/GTK/latest/awsvpnclient_amd64.deb -o awsvpnclient_amd64.deb
    ```
 
-1. Install the AWS provided client for Linux using the `dpkg` utility\.
+2. Install the AWS provided client for Linux using the `dpkg` utility\.
 
    ```
    sudo dpkg -i awsvpnclient_amd64.deb
    ```
+
+3. Ensure `openvpn-systemd-resolved` is installed\.
+
+   ```
+   sudo apt-get install openvpn-systemd-resolved
+   ```
+
 
 **Option 3 \-\- Install the \.deb package using Ubuntu Software Center**
 
