@@ -10,7 +10,7 @@ The following procedure shows how to establish a VPN connection using the AWS pr
 ## Requirements<a name="client-vpn-connect-macos-req"></a>
 
 To use the AWS provided client for macOS, the following is required:
-+ 64\-bit macOS High Sierra \(10\.13\), Mojave \(10\.14\), or Catalina \(10\.15\) 
++ 64\-bit macOS Mojave \(10\.14\), Catalina \(10\.15\) or Big Sur \(11\.0\)
 
 The client reserves TCP port 8096 on your computer\. For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\) the client reserves TCP port 35001\.
 
