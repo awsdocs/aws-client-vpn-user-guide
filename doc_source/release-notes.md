@@ -14,6 +14,8 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
+| 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | January 20, 2022 | [Download version 2\.0\.0](https://d20adtppz83p9s.cloudfront.net/WPF/2.0.0/AWS_VPN_Client.msi) | 
+| 1\.3\.7 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | November 8, 2021 | [Download version 1\.3\.7](https://d20adtppz83p9s.cloudfront.net/WPF/1.3.7/AWS_VPN_Client.msi) | 
 | 1\.3\.6 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | September 20, 2021 | [Download version 1\.3\.6](https://d20adtppz83p9s.cloudfront.net/WPF/1.3.6/AWS_VPN_Client.msi) | 
 | 1\.3\.5 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | August 16, 2021 | [Download version 1\.3\.5](https://d20adtppz83p9s.cloudfront.net/WPF/1.3.5/AWS_VPN_Client.msi) | 
 | 1\.3\.4 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | August 4, 2021 | [Download version 1\.3\.4](https://d20adtppz83p9s.cloudfront.net/WPF/1.3.4/AWS_VPN_Client.msi) | 
@@ -39,6 +41,8 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
+| 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | January 20, 2022 | [Download version 2\.0\.0](https://d20adtppz83p9s.cloudfront.net/OSX/2.0.0/AWS_VPN_Client.pkg) | 
+| 1\.4\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | November 9, 2021 | [Download version 1\.4\.0](https://d20adtppz83p9s.cloudfront.net/OSX/1.4.0/AWS_VPN_Client.pkg) | 
 | 1\.3\.5 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | September 20, 2021 | [Download version 1\.3\.5](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.5/AWS_VPN_Client.pkg) | 
 | 1\.3\.4 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | August 4, 2021 | [Download version 1\.3\.4](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.4/AWS_VPN_Client.pkg) | 
 | 1\.3\.3 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | July 1, 2021 | [Download version 1\.3\.3](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.3/AWS_VPN_Client.pkg) | 
@@ -63,5 +67,8 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
+| 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | January 20, 2022 | [Download version 2\.0\.0](https://d20adtppz83p9s.cloudfront.net/GTK/2.0.0/awsvpnclient_amd64.deb) | 
+| 1\.0\.3 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | November 8, 2021 | [Download version 1\.0\.3](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.3/awsvpnclient_amd64.deb) | 
+| 1\.0\.2 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | September 28, 2021 | [Download version 1\.0\.2](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.2/awsvpnclient_amd64.deb) | 
 | 1\.0\.1 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html)  | August 4, 2021 | [Download version 1\.0\.1](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.1/awsvpnclient_amd64.deb) | 
 | 1\.0\.0 | The initial release\. | June 11, 2021 | [Download version 1\.0\.0](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.0/awsvpnclient_amd64.deb) | 

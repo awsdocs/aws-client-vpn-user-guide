@@ -11,7 +11,7 @@ The following procedures show how to install the AWS provided client for Linux, 
 ## Requirements<a name="client-vpn-connect-linux-req"></a>
 
 To use the AWS provided client for Linux, the following is required:
-+ 64\-bit Ubuntu 18\.04 LTS or 64\-bit Ubuntu 20\.04 LTS
++ Ubuntu 18\.04 LTS or Ubuntu 20\.04 LTS \(AMD64 only\)
 
 The client reserves TCP port 8096 on your computer\. For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\) the client reserves TCP port 35001\.
 
