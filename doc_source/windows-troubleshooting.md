@@ -33,6 +33,7 @@ C:\Program Files\Amazon\AWS VPN Client\WinServiceLogs\username
 + [VPN connection process quits unexpectedly](#windows-troubleshooting-client-vpn-quits)
 + [Application fails to launch](#windows-troubleshooting-client-vpn-cannot-launch)
 + [Client cannot create profile](#windows-troubleshooting-client-vpn-cannot-create-profile)
++ [Client crash occurs on Dell PCs using Windows 10 or 11](#windows-troubleshooting-client-vpn-crash-dell)
 
 #### Client cannot connect<a name="windows-troubleshooting-client-vpn-cannot-connect"></a>
 
@@ -99,6 +100,49 @@ If the Client VPN endpoint uses mutual authentication, the configuration \(\.ovp
 
 **Solution**  
 Ensure that your Client VPN administrator adds the client certificate and key to the configuration file\. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export) in the *AWS Client VPN Administrator Guide*\.
+
+#### Client crash occurs on Dell PCs using Windows 10 or 11<a name="windows-troubleshooting-client-vpn-crash-dell"></a>
+
+**Problem**  
+On certain Dell PCs \(desktop and laptop\) that are running Windows 10 or 11, a crash can occur when you're browsing your file system to import a VPN configuration file\. If this issue occurs, you'll see messages like the following in the logs of the AWS provided client:
+
+```
+System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
+   at System.Data.SQLite.UnsafeNativeMethods.sqlite3_open_interop(Byte[] utf8Filename, Int32 flags, IntPtr& db)
+   at System.Data.SQLite.SQLite3.Open(String strFilename, SQLiteConnectionFlags connectionFlags, SQLiteOpenFlagsEnum openFlags, Int32 maxPoolSize, Boolean usePool)
+   at System.Data.SQLite.SQLiteConnection.Open()
+   at STCommonShellIntegration.DataShellManagement.CreateNewConnection(SQLiteConnection& newConnection)
+   at STCommonShellIntegration.DataShellManagement.InitConfiguration(Dictionary`2 targetSettings)
+   at DBROverlayIcon.DBRBackupOverlayIcon.initComponent()
+```
+
+**Cause**  
+The Dell Backup and Recovery system in Windows 10 and 11 might cause conflicts with the AWS provided client, particularly with the following three DLLs:
++ DBRShellExtension\.dll
++ DBROverlayIconBackuped\.dll
++ DBROverlayIconNotBackuped\.dll
+
+**Solution**  
+To avoid this problem, first make sure that your client is up to date with the latest version of the AWS provided client\. Go to [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/) and if a newer version is available, upgrade to the latest version\.
+
+**In addition, do one of the following:**
++ If you are using the Dell Backup and Recovery application, make sure that it's up to date\. A [Dell forum post](https://www.dell.com/community/Productivity-Software/Backup-and-Recovery-causing-applications-using-Qt5-DLLs-to-crash/m-p/4590339#M35007) states that this issue is resolved in newer versions of the application\. 
++ If you're not using the Dell Backup and Recovery application, some action will still need to be taken if you are experiencing this problem\. If you do not wish to upgrade the application, as an alternative, you can delete or rename the DLL files\. However, note that this will prevent the Dell Backup and Recovery application from functioning completely\.
+
+**Delete or rename the DLL files**
+
+1. Go to Windows Explorer and browse to the location where Dell Backup and Recovery is installed\. It typically is installed in the following location, but you might need to search to find it\.
+
+   ```
+   C:\Program Files (x86)\Dell Backup and Recovery\Components\Shell
+   ```
+
+1. Manually delete the following DLL files from the installation directory, or rename them\. Either action will prevent them from being loaded\.
+   + DBRShellExtension\.dll
+   + DBROverlayIconBackuped\.dll
+   + DBROverlayIconNotBackuped\.dll
+
+   You can rename the files by adding "\.bak" to the end of the file name, for example, **DBROverlayIconBackuped\.dll\.bak**\.
 
 ## OpenVPN GUI<a name="windows-troubleshooting-openvpn-gui"></a>
 

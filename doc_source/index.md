@@ -21,7 +21,6 @@ Amazon's trademarks and trade dress may not be used in
    + [AWS Client VPN for Windows](client-vpn-connect-windows.md)
    + [AWS Client VPN for macOS](client-vpn-connect-macos.md)
    + [AWS Client VPN for Linux](client-vpn-connect-linux.md)
-   + [Release notes for the AWS provided client](release-notes.md)
 + [Connect using an OpenVPN client](connect.md)
    + [Connect using a Windows client application](windows.md)
    + [Connect using an Android or iOS VPN client application](android.md)

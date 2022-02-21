@@ -46,4 +46,26 @@ Before you begin, ensure that you've read the [requirements](#client-vpn-connect
 
 ## Release notes<a name="client-vpn-connect-macos-release-notes"></a>
 
-To view the release notes and download links for the current and previous versions of AWS Client VPN for macOS, see [Release notes for macOS](release-notes.md#release-notes-macos)\.
+The following table contains the release notes and download links for the current and previous versions of AWS Client VPN for macOS\.
+
+
+| Version | Changes | Date | Download link | 
+| --- | --- | --- | --- | 
+| 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | January 20, 2022 | [Download version 2\.0\.0](https://d20adtppz83p9s.cloudfront.net/OSX/2.0.0/AWS_VPN_Client.pkg) | 
+| 1\.4\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | November 9, 2021 | [Download version 1\.4\.0](https://d20adtppz83p9s.cloudfront.net/OSX/1.4.0/AWS_VPN_Client.pkg) | 
+| 1\.3\.5 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | September 20, 2021 | [Download version 1\.3\.5](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.5/AWS_VPN_Client.pkg) | 
+| 1\.3\.4 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | August 4, 2021 | [Download version 1\.3\.4](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.4/AWS_VPN_Client.pkg) | 
+| 1\.3\.3 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | July 1, 2021 | [Download version 1\.3\.3](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.3/AWS_VPN_Client.pkg) | 
+| 1\.3\.2 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | May 12, 2021 | [Download version 1\.3\.2](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.2/AWS_VPN_Client.pkg) | 
+| 1\.3\.1 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | April 5, 2021 | [Download version 1\.3\.1](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.1/AWS_VPN_Client.pkg) | 
+| 1\.3\.0 | Added support features such as error reporting, sending diagnostic logs, and analytics\. | March 8, 2021 | [Download version 1\.3\.0](https://d20adtppz83p9s.cloudfront.net/OSX/1.3.0/AWS_VPN_Client.pkg) | 
+| 1\.2\.5 | Minor bug fixes and enhancements\. | February 25, 2021 | [Download version 1\.2\.5](https://d20adtppz83p9s.cloudfront.net/OSX/1.2.5/AWS_VPN_Client.pkg) | 
+| 1\.2\.4 | Minor bug fixes and enhancements\. | October 26, 2020 | No longer supported\. | 
+| 1\.2\.3 | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | October 8, 2020 | No longer supported\. | 
+| 1\.2\.2 | Minor bug fixes and enhancements\. | August 12, 2020 | No longer supported\. | 
+| 1\.2\.1 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | July 1, 2020 | No longer supported\. | 
+| 1\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | May 19, 2020 | No longer supported\. | 
+| 1\.1\.2 | Minor bug fixes and enhancements\. | April 21, 2020 | No longer supported\. | 
+| 1\.1\.1 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | April 2, 2020 | No longer supported\. | 
+| 1\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | March 9, 2020 | No longer supported\. | 
+| 1\.0\.0 | The initial release\. | February 4, 2020 | No longer supported\. | 

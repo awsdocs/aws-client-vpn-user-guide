@@ -6,7 +6,6 @@ You can connect to a Client VPN endpoint using the AWS provided client\. The AWS
 + [AWS Client VPN for Windows](client-vpn-connect-windows.md)
 + [AWS Client VPN for macOS](client-vpn-connect-macos.md)
 + [AWS Client VPN for Linux](client-vpn-connect-linux.md)
-+ [Release notes for the AWS provided client](release-notes.md)
 
 **OpenVPN directives**
 

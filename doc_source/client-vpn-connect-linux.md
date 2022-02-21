@@ -106,4 +106,13 @@ The AWS provided client is also referred to as the *AWS VPN Client* in the follo
 
 ## Release notes<a name="client-vpn-connect-linux-release-notes"></a>
 
-To view the release notes and download links for the current and previous versions of AWS Client VPN for Linux, see [Release notes for Linux](release-notes.md#release-notes-linux)\.
+The following table contains the release notes and download links for the current and previous versions of AWS Client VPN for Linux\.
+
+
+| Version | Changes | Date | Download link | 
+| --- | --- | --- | --- | 
+| 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | January 20, 2022 | [Download version 2\.0\.0](https://d20adtppz83p9s.cloudfront.net/GTK/2.0.0/awsvpnclient_amd64.deb) | 
+| 1\.0\.3 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | November 8, 2021 | [Download version 1\.0\.3](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.3/awsvpnclient_amd64.deb) | 
+| 1\.0\.2 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | September 28, 2021 | [Download version 1\.0\.2](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.2/awsvpnclient_amd64.deb) | 
+| 1\.0\.1 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | August 4, 2021 | [Download version 1\.0\.1](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.1/awsvpnclient_amd64.deb) | 
+| 1\.0\.0 | The initial release\. | June 11, 2021 | [Download version 1\.0\.0](https://d20adtppz83p9s.cloudfront.net/GTK/1.0.0/awsvpnclient_amd64.deb) | 
