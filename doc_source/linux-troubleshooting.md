@@ -29,7 +29,7 @@ The AWS VPN Client interacts with **systemd\-resolved**, a service available on 
 
 **Solution**
 
-1. Add the following directive in the OpenVPN config, to make sure that all DNS queries are sent into the VPN tunnel\.
+1. Add the following directive in the first line of the OpenVPN config file, to make sure that all DNS queries are sent into the VPN tunnel\.
 
    ```
    dhcp-option DOMAIN-ROUTE .
