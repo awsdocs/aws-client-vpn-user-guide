@@ -4,6 +4,9 @@ The following table describes the AWS Client VPN User Guide updates\.
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [AWS provided client for Windows \(3\.0\.0\) released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-windows) | See release notes for details\. | March 3, 2022 | 
+| [AWS provided client \(3\.0\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-macos) | See release notes for details\. | March 3, 2022 | 
+| [AWS provided client \(3\.0\.0\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-linux) | See release notes for details\. | March 3, 2022 | 
 | [AWS provided client for Windows \(2\.0\.0\) released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-windows) | See release notes for details\. | January 20, 2022 | 
 | [AWS provided client \(2\.0\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-macos) | See release notes for details\. | January 20, 2022 | 
 | [AWS provided client \(2\.0\.0\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-linux) | See release notes for details\. | January 20, 2022 | 
