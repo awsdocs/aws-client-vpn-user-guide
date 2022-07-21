@@ -51,7 +51,8 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
-| 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | March 3, 2022 | [Download version 3\.0\.0](https://d20adtppz83p9s.cloudfront.net/OSX/3.0.0/AWS_VPN_Client.pkg) | 
+| 3\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/OSX/3.1.0/AWS_VPN_Client.pkg)sha256: d88a4b5c9c0f9e64cef52ab508c65aff23913f712589c1f994b0578db985baf9 | 
+| 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | March 3, 2022 | No longer supported\. | 
 | 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | January 20, 2022 | No longer supported\. | 
 | 1\.4\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | November 9, 2021 | No longer supported\. | 
 | 1\.3\.5 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | September 20, 2021 | No longer supported\. | 

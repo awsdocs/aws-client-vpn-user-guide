@@ -4,12 +4,15 @@ The following table describes the AWS Client VPN User Guide updates\.
 
 | Change | Description | Date | 
 | --- |--- |--- |
-| [AWS provided client for Windows \(3\.0\.0\) released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-windows) | See release notes for details\. | March 3, 2022 | 
-| [AWS provided client \(3\.0\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-macos) | See release notes for details\. | March 3, 2022 | 
-| [AWS provided client \(3\.0\.0\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-linux) | See release notes for details\. | March 3, 2022 | 
-| [AWS provided client for Windows \(2\.0\.0\) released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-windows) | See release notes for details\. | January 20, 2022 | 
-| [AWS provided client \(2\.0\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-macos) | See release notes for details\. | January 20, 2022 | 
-| [AWS provided client \(2\.0\.0\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-linux) | See release notes for details\. | January 20, 2022 | 
+| [AWS provided client \(3\.1\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html#client-vpn-connect-macos-release-notes) | See release notes for details\. | May 23, 2022 | 
+| [AWS provided client \(3\.1\.0\) for Windows released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html#client-vpn-connect-windows-release-notes) | See release notes for details\. | May 23, 2022 | 
+| [AWS provided client \(3\.1\.0\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html#client-vpn-connect-linux-release-notes) | See release notes for details\. | May 23, 2022 | 
+| [AWS provided client \(3\.0\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html#client-vpn-connect-macos-release-notes) | See release notes for details\. | March 3, 2022 | 
+| [AWS provided client \(3\.0\.0\) for Windows released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html#client-vpn-connect-windows-release-notes) | See release notes for details\. | March 3, 2022 | 
+| [AWS provided client \(3\.0\.0\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html#client-vpn-connect-linux-release-notes) | See release notes for details\. | March 3, 2022 | 
+| [AWS provided client \(2\.0\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html#client-vpn-connect-macos-release-notes) | See release notes for details\. | January 20, 2022 | 
+| [AWS provided client \(2\.0\.0\) for Windows released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html#client-vpn-connect-windows-release-notes) | See release notes for details\. | January 20, 2022 | 
+| [AWS provided client \(2\.0\.0\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html#client-vpn-connect-linux-release-notes) | See release notes for details\. | January 20, 2022 | 
 | [AWS provided client \(1\.4\.0\) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-macos) | See release notes for details\. | November 9, 2021 | 
 | [AWS provided client for Windows \(1\.3\.7\) released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-windows) | See release notes for details\. | November 8, 2021 | 
 | [AWS provided client \(1\.0\.3\) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/release-notes.html#release-notes-linux) | See release notes for details\. | November 8, 2021 | 

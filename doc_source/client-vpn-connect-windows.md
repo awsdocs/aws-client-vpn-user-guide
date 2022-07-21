@@ -50,7 +50,8 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
-| 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | March 3, 2022 | [Download version 3\.0\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.0.0/AWS_VPN_Client.msi) | 
+| 3\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.1.0/AWS_VPN_Client.msi)sha256: 74ad66c5062d484173581deaa9bd6a6698ebd369a833f77710d417f4e4fcfe25 | 
+| 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | March 3, 2022 | No longer supported\. | 
 | 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | January 20, 2022 | No longer supported\. | 
 | 1\.3\.7 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | November 8, 2021 | No longer supported\. | 
 | 1\.3\.6 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | September 20, 2021 | No longer supported\. | 
