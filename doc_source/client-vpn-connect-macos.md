@@ -10,11 +10,11 @@ The following procedure shows how to establish a VPN connection using the AWS pr
 ## Requirements<a name="client-vpn-connect-macos-req"></a>
 
 To use the AWS provided client for macOS, the following is required:
-+ 64\-bit macOS Mojave \(10\.14\), Catalina \(10\.15\) or Big Sur \(11\.0\)
++ 64\-bit macOS Mojave \(10\.14\), Catalina \(10\.15\), Big Sur \(11\.0\) or Monterey \(12\.0\)
 
 The client reserves TCP port 8096 on your computer\. For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\) the client reserves TCP port 35001\.
 
-Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export)\.
+Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html)\.
 
 ## Connecting<a name="client-vpn-connect-macos-connecting"></a>
 
@@ -51,6 +51,7 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
+| 3\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | January 23, 2023 | [Download version 3\.2\.0](https://d20adtppz83p9s.cloudfront.net/OSX/3.2.0/AWS_VPN_Client.pkg)sha256: cb09c0a6dabfa98d30ef389977395228f5e89e260e2df8364be81ec0ef9ac6a4 | 
 | 3\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/OSX/3.1.0/AWS_VPN_Client.pkg)sha256: d88a4b5c9c0f9e64cef52ab508c65aff23913f712589c1f994b0578db985baf9 | 
 | 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | March 3, 2022 | No longer supported\. | 
 | 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html)  | January 20, 2022 | No longer supported\. | 

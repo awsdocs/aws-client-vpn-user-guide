@@ -15,7 +15,7 @@ To use the AWS provided client for Windows, the following are required:
 
 The client reserves TCP port 8096 on your computer\. For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\), the client reserves TCP port 35001\.
 
-Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export)\.
+Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html)\.
 
 ## Connecting<a name="client-vpn-connect-windows-connecting"></a>
 
@@ -50,6 +50,7 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
+| 3\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | January 23, 2023 | [Download version 3\.2\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.2.0/AWS_VPN_Client.msi)sha256: 18fc90b91b14d9adb3922e1a34eb546338c6db2d1ddbf5ac201e83f012a42d8c | 
 | 3\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.1.0/AWS_VPN_Client.msi)sha256: 74ad66c5062d484173581deaa9bd6a6698ebd369a833f77710d417f4e4fcfe25 | 
 | 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | March 3, 2022 | No longer supported\. | 
 | 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | January 20, 2022 | No longer supported\. | 

@@ -15,7 +15,7 @@ To use the AWS provided client for Linux, the following is required:
 
 The client reserves TCP port 8096 on your computer\. For Client VPN endpoints that use SAML\-based federated authentication \(single sign\-on\) the client reserves TCP port 35001\.
 
-Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-export)\.
+Before you begin, ensure that your Client VPN administrator has [created a Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create) and provided you with the [Client VPN endpoint configuration file](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html)\.
 
 ## Installation<a name="client-vpn-connect-linux-install"></a>
 
@@ -111,6 +111,7 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
+| 3\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | January 23, 2023 | [Download version 3\.2\.0](https://d20adtppz83p9s.cloudfront.net/GTK/3.2.0/awsvpnclient_amd64.deb)sha256: e94565a7dae4b266c921af3ff4675807b6e4dd52cc40f0560f1e8ce0ed50b260 | 
 | 3\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/GTK/3.1.0/awsvpnclient_amd64.deb)sha256: c43581e87262b5424f5a96c8a755381198abbbc55302a9042fb766434cd5aa95 | 
 | 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | March 3, 2022 | No longer supported\. | 
 | 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | January 20, 2022 | No longer supported\. | 

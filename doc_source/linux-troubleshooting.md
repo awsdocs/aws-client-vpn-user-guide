@@ -25,7 +25,7 @@ The AWS provided client daemon process stores log files in the following locatio
 Under some circumstances after a VPN connection is established, DNS queries will still go to the default system nameserver, instead of the nameservers that are configured for the ClientVPN endpoint\.
 
 **Cause**  
-The AWS VPN Client interacts with **systemd\-resolved**, a service available on Linux systems, which serves as a central piece of DNS management\. It is used to configure DNS servers that are pushed from the ClientVPN endpoint\. The problem occurs because **systemd\-resolved** doesn't set the highest priority to DNS servers that are provided by the ClientVPN endpoint\. Instead, it appends the servers to the existing list of DNS servers that are configured on the local system\. As a result, the original DNS servers might still have the highest priority, and therefore be used to resolve DNS queries\. 
+The client interacts with **systemd\-resolved**, a service available on Linux systems, which serves as a central piece of DNS management\. It is used to configure DNS servers that are pushed from the ClientVPN endpoint\. The problem occurs because **systemd\-resolved** doesn't set the highest priority to DNS servers that are provided by the ClientVPN endpoint\. Instead, it appends the servers to the existing list of DNS servers that are configured on the local system\. As a result, the original DNS servers might still have the highest priority, and therefore be used to resolve DNS queries\. 
 
 **Solution**
 
