@@ -68,7 +68,7 @@ The cause of this problem might be one of the following:
 1. Verify that your computer is connected to the internet\. 
 2. Ask your Client VPN administrator to verify that the `remote` directive in the configuration file resolves to a valid IP address\. 
 3. You can also disconnect the VPN session by choosing **Disconnect** in the AWS VPN Client window, and try connecting again\.
-4. Check the [CrlDaysToExpiry](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/monitoring-cloudwatch.html) metric in CloudWatch. If this is your case generate a new CRL from the same CA that was used to generate the certificates for all Clients and import it to the Client VPN endpoint.
+4. Ask your Client VPN administrator to check the [CrlDaysToExpiry](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/monitoring-cloudwatch.html) metric in CloudWatch. If this is the reason a new CRL should be generated and imported to the Client VPN endpoint.
 
 ### Client cannot create profile<a name="macos-troubleshooting-client-vpn-cannot-create-profile"></a>
 
