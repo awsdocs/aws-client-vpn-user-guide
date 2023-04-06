@@ -111,7 +111,7 @@ The following table contains the release notes and download links for the curren
 
 | Version | Changes | Date | Download link | 
 | --- | --- | --- | --- | 
-| 3\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | January 23, 2023 | [Download version 3\.2\.0](https://d20adtppz83p9s.cloudfront.net/GTK/3.2.0/awsvpnclient_amd64.deb)sha256: e94565a7dae4b266c921af3ff4675807b6e4dd52cc40f0560f1e8ce0ed50b260 | 
+| 3\.4\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | February 14, 2023 | [Download version 3\.4\.0](https://d20adtppz83p9s.cloudfront.net/GTK/3.4.0/awsvpnclient_amd64.deb)sha256: cde8c636adbbb2885318d8a3ead062432609c27af4b0970a7482fc6f47ca336d | 
 | 3\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/GTK/3.1.0/awsvpnclient_amd64.deb)sha256: c43581e87262b5424f5a96c8a755381198abbbc55302a9042fb766434cd5aa95 | 
 | 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | March 3, 2022 | No longer supported\. | 
 | 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux.html)  | January 20, 2022 | No longer supported\. | 

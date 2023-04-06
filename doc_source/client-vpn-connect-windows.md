@@ -48,27 +48,30 @@ Before you begin, ensure that you've read the [requirements](#client-vpn-connect
 The following table contains the release notes and download links for the current and previous versions of AWS Client VPN for Windows\.
 
 
-| Version | Changes | Date | Download link | 
+| Version | Changes | Date | Download link and SHA256 | 
 | --- | --- | --- | --- | 
-| 3\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | January 23, 2023 | [Download version 3\.2\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.2.0/AWS_VPN_Client.msi)sha256: 18fc90b91b14d9adb3922e1a34eb546338c6db2d1ddbf5ac201e83f012a42d8c | 
-| 3\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.1.0/AWS_VPN_Client.msi)sha256: 74ad66c5062d484173581deaa9bd6a6698ebd369a833f77710d417f4e4fcfe25 | 
-| 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | March 3, 2022 | No longer supported\. | 
-| 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | January 20, 2022 | No longer supported\. | 
-| 1\.3\.7 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | November 8, 2021 | No longer supported\. | 
-| 1\.3\.6 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | September 20, 2021 | No longer supported\. | 
-| 1\.3\.5 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | August 16, 2021 | No longer supported\. | 
-| 1\.3\.4 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | August 4, 2021 | No longer supported\. | 
-| 1\.3\.3 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | July 1, 2021 | No longer supported\. | 
-| 1\.3\.2 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | May 12, 2021 | No longer supported\. | 
-| 1\.3\.1 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | April 5, 2021 | No longer supported\. | 
-| 1\.3\.0 | Added support features such as error reporting, sending diagnostic logs, and analytics\. | March 8, 2021 | No longer supported\. | 
-| 1\.2\.7 | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html) | February 25, 2021 | No longer supported\. | 
-| 1\.2\.6 | Minor bug fixes and enhancements\. | October 26, 2020 | No longer supported\. | 
-| 1\.2\.5 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | October 8, 2020 | No longer supported\. | 
-| 1\.2\.4 | Minor bug fixes and enhancements\. | September 1, 2020 | No longer supported\. | 
-| 1\.2\.3 | Roll back changes in version 1\.2\.2\. | August 20, 2020 | No longer supported\. | 
-| 1\.2\.1 | Minor bug fixes and enhancements\. | July 1, 2020 | No longer supported\. | 
-| 1\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | May 19, 2020 | No longer supported\. | 
-| 1\.1\.1 | Minor bug fixes and enhancements\. | April 21, 2020 | No longer supported\. | 
-| 1\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | March 9, 2020 | No longer supported\. | 
-| 1\.0\.0 | The initial release\. | February 4, 2020 | No longer supported\. | 
+| 3\.5\.0 | Minor bug fixes and enhancements\. | April 3, 2023 | [Download version 3\.5\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.5.0/AWS_VPN_Client.msi) 8b3cca1159a6cedd15936150743f6019f22eaf6aa180b4f86adc380a5f5cf7cc  | 
+| 3\.4\.0 | Rolled back the changes from version 3\.3\.0\. | March 28, 2023 | No longer supported | 
+| 3\.3\.0 | Minor bug fixes and enhancements\. | March 17, 2023 | No longer supported | 
+| 3\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | January 23, 2023 | [Download version 3\.2\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.2.0/AWS_VPN_Client.msi) 18fc90b91b14d9adb3922e1a34eb546338c6db2d1ddbf5ac201e83f012a42d8c | 
+| 3\.1\.0 | Improved security posture\. | May 23, 2022 | [Download version 3\.1\.0](https://d20adtppz83p9s.cloudfront.net/WPF/3.1.0/AWS_VPN_Client.msi) 74ad66c5062d484173581deaa9bd6a6698ebd369a833f77710d417f4e4fcfe25 | 
+| 3\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | March 3, 2022 | No longer supported | 
+| 2\.0\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | January 20, 2022 | No longer supported | 
+| 1\.3\.7 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | November 8, 2021 | No longer supported | 
+| 1\.3\.6 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | September 20, 2021 | No longer supported | 
+| 1\.3\.5 | Patch to delete large windows log files\. | August 16, 2021 | No longer supported | 
+| 1\.3\.4 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | August 4, 2021 | No longer supported | 
+| 1\.3\.3 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | July 1, 2021 | No longer supported | 
+| 1\.3\.2 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | May 12, 2021 | No longer supported | 
+| 1\.3\.1 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | April 5, 2021 | No longer supported | 
+| 1\.3\.0 | Added support features such as error reporting, sending diagnostic logs, and analytics\. | March 8, 2021 | No longer supported | 
+| 1\.2\.7 | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html) | February 25, 2021 | No longer supported | 
+| 1\.2\.6 | Minor bug fixes and enhancements\. | October 26, 2020 | No longer supported | 
+| 1\.2\.5 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | October 8, 2020 | No longer supported | 
+| 1\.2\.4 | Minor bug fixes and enhancements\. | September 1, 2020 | No longer supported | 
+| 1\.2\.3 | Roll back changes in version 1\.2\.2\. | August 20, 2020 | No longer supported | 
+| 1\.2\.1 | Minor bug fixes and enhancements\. | July 1, 2020 | No longer supported | 
+| 1\.2\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | May 19, 2020 | No longer supported | 
+| 1\.1\.1 | Minor bug fixes and enhancements\. | April 21, 2020 | No longer supported | 
+| 1\.1\.0 |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows.html)  | March 9, 2020 | No longer supported | 
+| 1\.0\.0 | The initial release\. | February 4, 2020 | No longer supported | 
